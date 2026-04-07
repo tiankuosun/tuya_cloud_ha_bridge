@@ -1,6 +1,10 @@
-# Tuya-HA Connect
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiankuosun/tuya_cloud_ha_bridge/main/custom_components/tuya_cloud_ha_bridge/brand/logo.png" alt="tuya_cloud_ha_bridge" width="240" />
+</p>
 
-Tuya-HA Connect 是一个 Home Assistant 自定义集成，通过涂鸦 Tuya Link 协议将 HA 设备桥接到涂鸦云平台，实现双向控制。
+# tuya_cloud_ha_bridge
+
+tuya_cloud_ha_bridge 是一个 Home Assistant 自定义集成，通过涂鸦 Tuya Link 协议将 HA 设备桥接到涂鸦云平台，实现双向控制。
 
 ## 功能
 
@@ -15,7 +19,7 @@ Tuya-HA Connect 是一个 Home Assistant 自定义集成，通过涂鸦 Tuya Lin
 ### HACS 安装（推荐）
 
 1. 在 HACS 中添加本仓库作为自定义仓库
-2. 搜索 "Tuya-HA Connect" 并安装
+2. 搜索 "tuya_cloud_ha_bridge" 并安装
 3. 重启 Home Assistant
 
 ### 手动安装
@@ -27,7 +31,7 @@ Tuya-HA Connect 是一个 Home Assistant 自定义集成，通过涂鸦 Tuya Lin
 ## 配置
 
 1. 前往 **设置 > 设备与服务 > 添加集成**
-2. 搜索 "Tuya-HA Connect"
+2. 搜索 "tuya_cloud_ha_bridge"
 3. 输入涂鸦云平台 API Key（从涂鸦开发者平台获取）
 4. 按照提示完成配置
 
