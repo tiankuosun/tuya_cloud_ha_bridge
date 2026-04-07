@@ -1,5 +1,5 @@
 {
-  "name": "Tuya-HA Connect",
+  "name": "tuya_cloud_ha_bridge",
   "render_readme": true,
   "homeassistant": "2024.1.0"
 }
