@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiankuosun/tuya_cloud_ha_bridge/main/custom_components/tuya_cloud_ha_bridge/brand/logo.png" alt="tuya_cloud_ha_bridge" width="240" />
+  <img src="https://cdn.jsdelivr.net/gh/tiankuosun/tuya_cloud_ha_bridge@main/custom_components/tuya_cloud_ha_bridge/brand/logo.png" alt="tuya_cloud_ha_bridge" width="240" />
 </p>
 
 # tuya_cloud_ha_bridge
@@ -22,6 +22,12 @@ tuya_cloud_ha_bridge 是一个 Home Assistant 自定义集成，通过涂鸦 Tuy
 2. 搜索 "tuya_cloud_ha_bridge" 并安装
 3. 重启 Home Assistant
 
+**说明（图标）**：
+
+- **HACS 仓库列表**里的小图标仍多依赖 CDN，自定义集成可能仍是占位图，见 [HACS 已知限制](https://github.com/hacs/integration/issues/5171)。
+- **「设置 → 设备与服务」里的集成图标**：自 **Home Assistant Core 2026.3** 起，自定义集成才支持通过 `custom_components/<域名>/brand/icon.png` 在本机显示；**低于 2026.3 时会出现 “Icon not available”**，与是否 HACS 安装成功无关。请先升级 Core 至 **2026.3.0 或以上**并重启，再刷新浏览器缓存。
+- 若本页顶部 Logo 不显示，请确认 GitHub 默认分支为 `main`、仓库为公开。
+
 ### 手动安装
 
 1. 下载本仓库
@@ -37,8 +43,8 @@ tuya_cloud_ha_bridge 是一个 Home Assistant 自定义集成，通过涂鸦 Tuy
 
 ## 依赖
 
-- Home Assistant 2024.1.0+
-- paho-mqtt 2.1.0
+- **Home Assistant Core 2026.3.0+**（集成图标依赖 [Brands Proxy API 与本地 `brand/`](https://developers.home-assistant.io/blog/2026/02/24/brands-proxy-api)；更低版本无法在「设备与服务」中显示自定义品牌图）
+- paho-mqtt 2.1.0（由集成 `manifest.json` 自动安装）
 
 ## 许可证
 
